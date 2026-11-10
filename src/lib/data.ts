@@ -47,10 +47,11 @@ export interface ValuePillar {
 export const contact = {
   person: "Duvan Rambal",
   email: "info@gradientejuridico.com",
-  phone: "305 945 1119",
-  phoneIntl: "+57 305 945 1119",
-  whatsapp: "573059451119",
-  whatsappUrl: "https://wa.me/573059451119",
+  phone: "322 894 8551",
+  phoneIntl: "+57 322 894 8551",
+  whatsapp: "573228948551",
+  whatsappUrl: "https://wa.me/573228948551",
+  instagramUrl: "https://www.instagram.com/gradientejuridico",
   location: "Colombia",
   locationDetail: "Atención presencial y online",
 };
@@ -71,6 +72,7 @@ export const brand = {
   phone: contact.phoneIntl,
   contactPerson: contact.person,
   whatsappUrl: contact.whatsappUrl,
+  instagramUrl: contact.instagramUrl,
 };
 
 export function localizedBrand(locale: "es" | "en") {

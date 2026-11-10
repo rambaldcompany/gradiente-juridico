@@ -26,6 +26,7 @@ export function SiteJsonLd() {
           "@type": "PostalAddress",
           addressCountry: "CO",
         },
+        sameAs: [brand.instagramUrl, brand.whatsappUrl],
       },
       {
         "@type": "WebSite",

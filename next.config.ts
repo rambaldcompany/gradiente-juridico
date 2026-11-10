@@ -5,7 +5,7 @@ const nextConfig: NextConfig = {
     return [
       {
         source: "/contacto",
-        destination: "https://wa.me/573059451119",
+        destination: "https://wa.me/573228948551",
         permanent: true,
       },
       {
