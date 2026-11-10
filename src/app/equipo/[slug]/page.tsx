@@ -57,12 +57,12 @@ export default async function ExpertPage({
       <main className="overflow-x-hidden">
         <section className="bg-black pt-28 text-white lg:pt-32">
           <div className="mx-auto grid max-w-[1400px] items-end gap-10 px-4 py-16 sm:px-6 lg:grid-cols-[0.9fr_1.1fr] lg:px-10 lg:py-20">
-            <div className="relative aspect-[3/4] overflow-hidden">
+            <div className="relative aspect-[9/16] max-h-[min(85vh,920px)] w-full overflow-hidden bg-black">
               <Image
                 src={expert.image}
                 alt={expert.name}
                 fill
-                className="animate-image-in object-cover"
+                className="animate-image-in object-contain object-center"
                 sizes="(min-width: 1024px) 40vw, 100vw"
                 priority
               />

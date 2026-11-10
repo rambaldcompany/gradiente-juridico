@@ -38,12 +38,12 @@ export default async function EquipoPage() {
                 locale={locale}
                 className="group block"
               >
-                <div className="relative aspect-[3/4] overflow-hidden bg-muted">
+                <div className="relative aspect-[9/16] overflow-hidden bg-muted">
                   <Image
                     src={expert.image}
                     alt={expert.name}
                     fill
-                    className="object-cover transition-transform duration-700 group-hover:scale-110"
+                    className="object-contain object-center transition-transform duration-700 group-hover:scale-105"
                     sizes="(min-width: 1024px) 25vw, 50vw"
                   />
                 </div>
