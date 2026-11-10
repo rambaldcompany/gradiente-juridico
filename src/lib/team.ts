@@ -76,6 +76,32 @@ export const experts: Expert[] = [
     admitted: "Colombia",
     image: media.team2,
   },
+  {
+    slug: "juan-pablo-uribe-prada",
+    name: "Juan Pablo Uribe Prada",
+    role: "Derecho empresarial",
+    practice: "Insolvencia, societario y patrimonio",
+    location: "Colombia",
+    email: contact.email,
+    teaser:
+      "Reorganización, recuperación de cartera y estructuras societarias con criterio de negocio.",
+    bio: "Abogado de la Universidad del Tolima y especialista en Derecho Administrativo de la Universidad Externado de Colombia, donde cursa la especialización en Derecho de los Negocios. Tiene formación en Procesos Concursales de la Universidad de los Andes.\n\nSu práctica se concentra en insolvencia empresarial, derecho societario, protección patrimonial y recuperación de cartera. Asesora a comerciantes que evalúan acogerse a un proceso de reorganización y a acreedores que buscan recuperar sus créditos cuando el deudor entra en insolvencia. Estructura compraventa de acciones, pactos de accionistas, fideicomisos, mandatos, cuentas en participación y factoring, y acompaña a familias y empresarios en la planeación patrimonial.",
+    advises:
+      "Comerciantes ante insolvencia, acreedores en recuperación de cartera, sociedades que estructuran operaciones de capital y familias empresarias que ordenan su patrimonio.",
+    approach:
+      "Primero el mapa de riesgo: deuda, activos, socios y plazos legales. Después la vía — reorganización, negociación o contrato — con documentos que se puedan cumplir.",
+    typicalMatters: [
+      "Procesos de reorganización empresarial y estrategia del comerciante",
+      "Recuperación de cartera ante deudores en insolvencia",
+      "Compraventa de acciones, acuerdos de accionistas y gobierno corporativo",
+      "Fideicomisos, mandatos, cuentas en participación y factoring",
+      "Planeación y protección patrimonial familiar y empresarial",
+    ],
+    focus: ["Insolvencia", "Derecho societario", "Patrimonio"],
+    languages: ["Español"],
+    admitted: "Colombia",
+    image: media.team3,
+  },
 ];
 
 export function listExperts(locale: Locale = "es"): Expert[] {

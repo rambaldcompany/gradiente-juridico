@@ -603,6 +603,28 @@ export const expertsEn: Record<string, ExpertCopy> = {
     languages: ["Spanish"],
     admitted: "Colombia",
   },
+  "juan-pablo-uribe-prada": {
+    role: "Business law",
+    practice: "Insolvency, corporate and wealth planning",
+    location: "Colombia",
+    teaser:
+      "Reorganization, portfolio recovery and corporate structures with a business lens.",
+    bio: "Law graduate of Universidad del Tolima and specialist in administrative law from Universidad Externado de Colombia, where he is completing a specialization in business law. He trained in insolvency proceedings at Universidad de los Andes.\n\nHis practice focuses on business insolvency, corporate law, asset protection and portfolio recovery. He advises merchants weighing a reorganization process and creditors seeking to recover claims when a debtor enters insolvency. He structures share purchase agreements, shareholders’ agreements, trusts, mandates, joint accounts and factoring, and supports families and business owners in wealth planning.",
+    advises:
+      "Merchants facing insolvency, creditors recovering portfolios, companies structuring capital transactions and business families ordering their wealth.",
+    approach:
+      "First the risk map: debt, assets, partners and legal timelines. Then the path — reorganization, negotiation or contract — with documents that can be performed.",
+    typicalMatters: [
+      "Business reorganization proceedings and merchant strategy",
+      "Portfolio recovery against insolvent debtors",
+      "Share sales, shareholders’ agreements and corporate governance",
+      "Trusts, mandates, joint accounts and factoring",
+      "Family and business wealth planning and protection",
+    ],
+    focus: ["Insolvency", "Corporate law", "Wealth planning"],
+    languages: ["Spanish"],
+    admitted: "Colombia",
+  },
 };
 
 export const officesEn: Record<string, OfficeCopy> = {
