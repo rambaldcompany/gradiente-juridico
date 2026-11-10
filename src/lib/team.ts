@@ -1,4 +1,5 @@
 import { expertsEn } from "@/lib/content-en";
+import { contact } from "@/lib/data";
 import type { Locale } from "@/lib/locale";
 import { media } from "@/lib/media";
 
@@ -27,7 +28,7 @@ export const experts: Expert[] = [
     role: "Contacto principal",
     practice: "Empresa y propiedad intelectual",
     location: "Colombia",
-    email: "helenanovoac@gmail.com",
+    email: contact.email,
     teaser:
       "Primera conversación del asunto: qué proteger, qué contratar y cómo llevarlo con el equipo por WhatsApp.",
     bio: "Duvan es el punto de entrada de Gradiente Jurídico. Recibe el caso, ordena el riesgo y define si el camino es registro, contrato, sociedad, cumplimiento o controversia — o una combinación. Trabaja con empresas y proyectos que necesitan una lectura de negocio, no solo un trámite.\n\nEn una boutique el cuello de botella suele ser el diagnóstico: ¿la marca ya se usa sin titularidad clara? ¿El contrato no cubre la alianza? ¿Hay un conflicto societario o un tercero cerca del signo? Duvan traduce eso en un plan accionable.",
@@ -56,7 +57,7 @@ export const experts: Expert[] = [
     role: "Propiedad intelectual",
     practice: "Marcas y derechos de autor",
     location: "Colombia",
-    email: "helenanovoac@gmail.com",
+    email: contact.email,
     teaser:
       "Identidad de marca, contenidos y obras: registro, uso en el mercado y reglas con terceros.",
     bio: "Helena se ocupa de la identidad que el mercado reconoce: signos distintivos, nombres, empaques y el contenido que la empresa produce. Combina el trámite ante la Superintendencia de Industria y Comercio y, en obras, las vías de derechos de autor, con una lectura de cómo se usa el activo en canales, empaque y contratos.\n\nEl error frecuente es invertir en marca o contenido sin titularidad oponible, o firmar con agencias y creadores sin cesión. Helena ordena clases, anterioridades y el perímetro de uso para que el signo y las obras aguanten crecimiento, franquicia o exportación.",

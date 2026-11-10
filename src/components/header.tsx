@@ -155,7 +155,6 @@ export function Header({
               ))}
               </nav>
               <LanguageSwitch
-                locale={locale}
                 className={cn(
                   megaOpen
                     ? "text-foreground"

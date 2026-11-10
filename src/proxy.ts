@@ -88,7 +88,7 @@ function isBot(request: NextRequest) {
   return BOT.test(request.headers.get("user-agent") || "");
 }
 
-export function middleware(request: NextRequest) {
+export function proxy(request: NextRequest) {
   const { pathname } = request.nextUrl;
 
   if (SKIP.test(pathname) || pathname.includes(".")) {
@@ -100,7 +100,6 @@ export function middleware(request: NextRequest) {
   const chosen = localeCookie(request);
   const bot = isBot(request);
 
-  // /es is an explicit Spanish choice: persist it, then serve the unprefixed URL.
   if (isEs) {
     const url = request.nextUrl.clone();
     url.pathname = pathname === "/es" ? "/" : pathname.slice(3) || "/";

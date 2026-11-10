@@ -46,7 +46,7 @@ export interface ValuePillar {
 
 export const contact = {
   person: "Duvan Rambal",
-  email: "helenanovoac@gmail.com",
+  email: "info@gradientejuridico.com",
   phone: "305 945 1119",
   phoneIntl: "+57 305 945 1119",
   whatsapp: "573059451119",

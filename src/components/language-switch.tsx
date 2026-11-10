@@ -1,9 +1,15 @@
 "use client";
 
 import Link from "next/link";
-import { usePathname, useRouter } from "next/navigation";
+import { usePathname } from "next/navigation";
 import { ChevronDown } from "lucide-react";
-import { locales, prefixHref, stripLocalePrefix, type Locale } from "@/lib/locale";
+import {
+  localeFromPathname,
+  locales,
+  prefixHref,
+  stripLocalePrefix,
+  type Locale,
+} from "@/lib/locale";
 import { cn } from "@/lib/utils";
 
 const LOCALE_COOKIE = "gj-locale";
@@ -34,27 +40,25 @@ const localeLabel: Record<Locale, string> = {
 };
 
 export function LanguageSwitch({
-  locale,
   className,
 }: {
-  locale: Locale;
   className?: string;
 }) {
   const pathname = usePathname() || "/";
-  const router = useRouter();
+  const current = localeFromPathname(pathname);
   const bare = stripLocalePrefix(pathname);
 
   function go(next: Locale) {
-    if (next === locale) return;
+    if (next === current) return;
     document.cookie = `${LOCALE_COOKIE}=${next}; path=/; max-age=${LOCALE_MAX_AGE}; SameSite=Lax`;
-    router.push(prefixHref(bare, next));
+    window.location.assign(prefixHref(bare, next));
   }
 
   return (
     <label className={cn("relative inline-flex items-center", className)}>
       <span className="sr-only">Idioma / Language</span>
       <select
-        value={locale}
+        value={current}
         onChange={(event) => go(event.target.value as Locale)}
         className="cursor-pointer appearance-none bg-transparent py-1 pl-0 pr-5 text-[11px] font-semibold uppercase tracking-[0.16em] text-inherit outline-none"
         aria-label="Idioma / Language"
