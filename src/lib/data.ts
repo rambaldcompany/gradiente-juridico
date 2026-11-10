@@ -52,6 +52,7 @@ export const contact = {
   whatsapp: "573228948551",
   whatsappUrl: "https://wa.me/573228948551",
   instagramUrl: "https://www.instagram.com/gradientejuridico",
+  linkedinUrl: "https://www.linkedin.com/in/helena-novoa-716740171/",
   location: "Colombia",
   locationDetail: "Atención presencial y online",
 };
@@ -73,6 +74,7 @@ export const brand = {
   contactPerson: contact.person,
   whatsappUrl: contact.whatsappUrl,
   instagramUrl: contact.instagramUrl,
+  linkedinUrl: contact.linkedinUrl,
 };
 
 export function localizedBrand(locale: "es" | "en") {
